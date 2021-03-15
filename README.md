@@ -29,8 +29,11 @@ set nat source rule 100 translation address' masquerade\
 
 # router
 ifconfig eth0 10.10.0.1 netmask 255.255.255.0 up\
+\
 ifconfig eth1 30.30.0.1 netmask 255.255.0.0 up\
+\
 ifconfig eth2 20.20.0.1 netmask 255.255.240.0 up\
+\
 
 ip route add 40.40.0.0/24 via 30.30.0.2\
 ip route add 50.50.0.0/25 via 20.20.0.3\
