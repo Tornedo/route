@@ -57,7 +57,7 @@ r1[2]=C
 \
 r1[image]="unibaktr/vyos"
 \
-
+\
 #load blancing
 iptables --table nat --append PREROUTING --destination 100.0.0.2 -p tcp --dport 80 --match statistic --mode random --probability 0.33 --jump DNAT --to-destination 10.0.0.1:80
 \
