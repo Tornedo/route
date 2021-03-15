@@ -22,9 +22,11 @@ ifconfig eth0 50.50.0.100 netmask 255.255.255.128 up\
 ip route add default via 50.50.0.3\
 
 \
-set nat source rule 100 outbound-interface 'eth1\ 
-set nat source rule po source address 40.40.0.2/24\ 
-set nat source rule 100 translation address' masquerade\
+set nat source rule 100 outbound-interface 'eth1
+\
+set nat source rule po source address 40.40.0.2/24
+\
+set nat source rule 100 translation address' masquerade
 \
 
 # router
