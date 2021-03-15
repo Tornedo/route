@@ -12,7 +12,7 @@ iptables -I FORWARD 2 -d 2.0.0.0/8 -j ACCEPT \
 iptables -I FORWARD 3 -d 50.50.0.0/25 -p tcp -j ACCEPT \
 iptables -I FORWARD 4 -s 50.50.0.0/25 -p tcp -j ACCEPT \
 \
-iptables -I FORWARD 1 -s 192.168.30.0/24 -j DROP
+iptables -I FORWARD 1 -s 192.168.30.0/24 -j DROP\
 iptables -I FORWARD 1 -d 192.168.30.0/24 -j DROP
 \
 \
