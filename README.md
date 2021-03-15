@@ -39,3 +39,21 @@ ifconfig eth2 20.20.0.1 netmask 255.255.240.0 up\
 
 ip route add 40.40.0.0/24 via 30.30.0.2\
 ip route add 50.50.0.0/25 via 20.20.0.3\
+
+#lab.conf
+\pc1[0]=A
+\
+pc1[image]="unibaktr/alpine:busybox"
+\
+pc2[0]=A
+\
+pc2[image]="unibaktr/alpine:busybox"
+\
+r1[0]=A
+\
+r1[1]=B
+\
+r1[2]=C
+\
+r1[image]="unibaktr/vyos"
+\
