@@ -11,10 +11,15 @@ iptables -I FORWARD 1 -s 2.0.0.0/8 -j ACCEPT\
 iptables -I FORWARD 2 -d 2.0.0.0/8 -j ACCEPT\	
 iptables -I FORWARD 3 -d 50.50.0.0/25 -p tcp -j ACCEPT\
 iptables -I FORWARD 4 -s 50.50.0.0/25 -p tcp -j ACCEPT\
+\
+\
 
 #pc
 ifconfig eth0 50.50.0.100 netmask 255.255.255.128 up\
 ip route add default via 50.50.0.3\
+
+\
+\
 
 # router
 ifconfig eth0 10.10.0.1 netmask 255.255.255.0 up\
