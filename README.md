@@ -65,3 +65,12 @@ iptables --table nat --append PREROUTING --destination 100.0.0.2 -p tcp --dport 
 \
 iptables --table nat --append PREROUTING --destination 100.0.0.2 -p tcp --dport 80 --jump DNAT --to-destination 10.0.0.3:80
 \
+#dhcp \
+\
+configure
+\
+ set service dhcp-server shared-network-name dhcpexample authoritative enable 
+ \
+ set service dhcp-server shared-network-name dhcpexample subnet 10.10.0.0/24 default-router 10.10.0.1
+ \
+ set service dhcp-server shared-network-name dhcpexample subnet 10.10.e.0/24 start 10.16.0.100 stop 18.10.0.200
