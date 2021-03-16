@@ -73,4 +73,4 @@ configure
  \
  set service dhcp-server shared-network-name dhcpexample subnet 10.10.0.0/24 default-router 10.10.0.1
  \
- set service dhcp-server shared-network-name dhcpexample subnet 10.10.e.0/24 start 10.16.0.100 stop 18.10.0.200
+ set service dhcp-server shared-network-name dhcpexample subnet 10.10.0.0/24 start 10.10.0.100 stop 10.10.0.200
